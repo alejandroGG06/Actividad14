@@ -45,11 +45,13 @@ public class Mainact14 {
        /**
         * metodo con el cual se dispara a un objeto creado por parametro
         * 
-        * El numero de las balas va a ir disminuyendo,
-        * en caso de que no las tenga el objeto sol no morira.
-        * el objeto sol.estaMuerto sera 'true', siempre y cuando el atributo this cuente 
-        * con las balas suficientes
-        *   
+        * la muerte del objeto 'sol' estara condicionada por el numero de balas
+        * que tenga el objeto principal
+        
+        * el numero de balas ira disminuyendo por lo que el objeto sol.estamuerto morira
+        * si el objeto principal tiene las balas suficientes para matarlo       
+        
+        * 
         * @param el objeto sol es el que introduciemos por parametro
         * 
         *
