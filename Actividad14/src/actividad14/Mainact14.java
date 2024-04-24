@@ -77,6 +77,8 @@ public class Jugador {
 
 
 /**
+ * 
+ * xd
  * Metodo poner dorsal asigna un numero de dorsal al jugador
  * Por medio de un numero int pasado por parametro se asigna el numero de
  * dorsal a un jugador, al entrar en la sentencia condicional dice que, si el numero pasado
