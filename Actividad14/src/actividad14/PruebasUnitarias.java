@@ -9,7 +9,11 @@ public class PruebasUnitarias {
 	 * 
 	 * si es asi llama al metodo disparar, la propiedad estaMuerto se establece a true y el numero de balas se reduce en 1
 	 
-	 * resultado esperado true;
+	 * resultado esperado:
+
+	 this.numeroBalas = 8;
+	 * 		
+	  resultado esperado = true
 	 * 
 	 * 
 	 * 
@@ -20,9 +24,11 @@ public class PruebasUnitarias {
 	 
 	 * si es asi llama al metodo disparar, la propiedad estaMuerto se establece a false y el numero de balas no se reduce.
 	 
-	 * resultado esperado false;  
+	 * resultado esperado:  
 	
-	 *
+	 *  this.numeroBalas = o;
+	 * 		
+	  resultado esperado = false
 	 *
 	 * 
 	 */
