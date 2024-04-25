@@ -21,14 +21,13 @@ public class Mainact14 {
 
         //Crear los métodos “get” y “set” de los atributos cuando se vayan a hacer las pruebas y la documentación. Aquí no se han creado porque no aportan nada
 
-        
-        
+
        /**
-        *  metodo con el cual se podra o no disparar 
-        * si el numero de balas es mayor que cero podra disparar
-        * 
-        * @return si es mayor a 0 devuelve true, pero si es igual o menor que cero devuelve false
-        */
+	* Este metodo verifica que el soldado tenga balas.
+	* Si este tiene balas, le permitira disparar, retornando true.
+	* Si no tiene balas, no le permitirá disparar, retornando false.
+	*/
+
 
         public boolean puedeDisparar() {
 
@@ -43,19 +42,13 @@ public class Mainact14 {
         }
 
        /**
-        * metodo con el cual se dispara a un objeto creado por parametro
-        * 
-        * la muerte del objeto 'sol' estara condicionada por el numero de balas
-        * que tenga el objeto principal
-        
-        * el numero de balas ira disminuyendo por lo que el objeto sol.estamuerto morira
-        * si el objeto principal tiene las balas suficientes para matarlo       
-        
-        * 
-        * @param el objeto sol es el que introduciemos por parametro
-        * 
-        *
-        */
+
+	* Este metodo necesita un parametro de entrada sol.
+	* Cuando dispare, se restara una bala al numero total de balas.
+	* El Soldado nativo, disparará al Soldado sol, y este cambiara, de estar vivo a estar muerto.
+ 	@param soldado al que se disparará
+	*/
+	
 
         public void disparar(Soldado sol) {
 
@@ -93,15 +86,13 @@ public class Jugador {
 
 //Crear los métodos “get” y “set” de los atributos cuando se vayan a hacer las pruebas y la documentación. Aquí no se han creado porque no aportan nada
 
-        /**
-         * metodo que permitira asignarle un dorsal a los jugadores de un equipo.
-         
-         * si el objeto dorsal esta comprendido en un rango de 1 y 30 mostrara el dorsal asignado
-         
-         * pero si el dorsal no esta en el rango asignado anteriormente mostrara -1
-         * 
-         * @param dorsal sera el objeto introducido por el usuario
-         */
+	/**
+ 	* El metodo pondra el dorsal que se introduzca como valor de entrada.
+  	* Se verificará si el dorsal es mayor o igual que 1 y si es menor o igual que 30.
+   	* Si se cumplen las dos, se cambiara el dorsal al dorsal introducido.
+    	* Si no esta entre 1 y 30, el dorsal sera igual a -1
+     	* @param numero del dorsal que se establecerá
+ 	*/
 
         public void ponerDorsal(int dorsal) {
 
@@ -117,19 +108,13 @@ public class Jugador {
 
         }
 
-       
-        /**
-         *  metodo con el cual se podra saber si un jugador sera expulsado.
-         
-         *	el atributo expulsado, por defecto sera false pero si se cumple alguno de los 
-         *	siguientes casos cambiaria a true, por lo cual seria expulsado.
-         
-         *  si el numero de tarjetas amariilas es igual a 2 el jugador sera expulsado
-         *  si el numero de tarjetas rojas es igual a 1 el jugador sera expulsado
-         *  
-         * 
-         * @return si se cumple alguno de los casos anteriores  el jugador sera expulsado por lo que devuelve true
-         */
+	/**
+	* Metodo estaExpulsado cambiará el valor de expulsado a false.
+ 	* Despues verificará si numeroTarjetasAmarillas es igual que 2, el valor de expulsado cambiará a true.
+  	* Tambien verificará si numeroTarjetasRojas es igual que 1, el valor de expulsado cambiará a true.
+   	* El metodo retornará expulsado
+	*/
+
         public boolean estaExpulsado() {
 
                       boolean expulsado = false;                                                  
