@@ -1,21 +1,33 @@
 package actividad14;
 
 public class Mainact14 {
+	
+	
+	
+	/** 
+	 * el objetivo de esta clase es  <b> contar el numero de balas y asesinar un soldado <b>
+	 *<u> tendra metodos como puede disparar y disparar<u>
+	 * @version 1.0
+	 * @author AlejandroGrajales
+	 */
+	
 	public class Soldado {
 
-        private boolean estaMuerto;
+        private boolean estaMuerto; // atributo de instancia
 
-        private int numeroBalas;
+        private int numeroBalas; // atributo de instancia
 
        
 
         //Crear los métodos “get” y “set” de los atributos cuando se vayan a hacer las pruebas y la documentación. Aquí no se han creado porque no aportan nada
+
 
        /**
 	* Este metodo verifica que el soldado tenga balas.
 	* Si este tiene balas, le permitira disparar, retornando true.
 	* Si no tiene balas, no le permitirá disparar, retornando false.
 	*/
+
 
         public boolean puedeDisparar() {
 
@@ -30,6 +42,7 @@ public class Mainact14 {
         }
 
        /**
+
 	* Este metodo necesita un parametro de entrada sol.
 	* Cuando dispare, se restara una bala al numero total de balas.
 	* El Soldado nativo, disparará al Soldado sol, y este cambiara, de estar vivo a estar muerto.
@@ -47,17 +60,27 @@ public class Mainact14 {
 
 }
 
+	
+	
 //Requerimiento 2
 
 //Documentar la siguiente clase
+	
+	/**
+	 * el objetivo de esta clase es	<b> asignar los dorsales a los jugadores y saber si son expulsados en
+	 * algun partido<b>
+	 *  esta clase cuenta con 2 metodos que son, <b>poner dorsal y esta expulsado<b>
+	 *  @version 1.0
+	 *  @author AlejandroGrajales
+	 */
 
 public class Jugador {
 
-        private int dorsal;
+        private int dorsal; // atributo de instancia
 
-        private int numeroTarjetasAmarillas;
+        private int numeroTarjetasAmarillas; // atributo de instancia
 
-        private int numeroTarjetasRojas;
+        private int numeroTarjetasRojas; // atributo de instancia
 
                      
 
